@@ -1,0 +1,8 @@
+{
+    "title":"MySlaveCMSWebpage",
+    "headerbgcolour":"white",
+    "headerimg":"assets/img/logo.png",
+    "headerbgimg":"assets/img/header.jpg",
+    "initialpagetoparse":"assets/pages/index.page",
+    "navigationfile":"assets/pages/navigation.page"
+}
