@@ -14,7 +14,8 @@ by slave should look like this: <code>< a href="#" onclick="openPage('PAGE')" >M
 which opens the page "PAGE.page" by opener.js. login.js is currently not in use.
 
 # Credits
-Only credit: Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com
+Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com
+Webfont "Roboto-Regular.ttf" and "RobotoCondensed-Regular.ttf" downloaded from google.com/fonts
 
 # System Requirements
 To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave uses JS's XMLHttpRequest.
@@ -31,8 +32,9 @@ To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave u
        "initialpagetoparse":"assets/pages/index.page",  => The start page.<br>
        "navigationfile":"assets/pages/navigation.page"  => The page used for the navigation.<br>
    }</code>
-4. Open .../assets/pages/index.page in your editor and edit it that it fits to your requirements.
-5. Open .../assets/pages/navigation.page and edit that it fits to your links. When linking to a slave-page,
+4. Open index.html and choose a CSS-Stylesheet (slave.css, slave-standard.css or slave-modern.css), put it into the "link" tag in the head-section.
+5. Open .../assets/pages/index.page in your editor and edit it that it fits to your requirements.
+6. Open .../assets/pages/navigation.page and edit that it fits to your links. When linking to a slave-page,
 please remember that the a-elements have to look like <code>< a href="#" onclick="openPage('PAGE')" >My super link</ a ></code>!
 
 # FAQ
@@ -41,4 +43,6 @@ Well, not frequently asked, but questions that can be asked:<br>
 **A:** There will be in near future.<br><br>
 **Q:** Can I modify the source code?<br>
 **A:** Since this is released under GPL v3, yes, you can!<br><br>
+**Q:** How do I make new styles?<br>
+**A:** The only thing to know is about CSS3 and off you go!<br><br>
 If you have a question, please notify me!
