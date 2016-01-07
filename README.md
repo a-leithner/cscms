@@ -24,14 +24,13 @@ To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave u
 1. Clone this repository into the folder you set in Apache's Configuration as the document root.
 2. Open .../assets/json/conf.json in your preferred editor (e.g. VisualStudio Code, Brackets, etc.)
 3. Edit the tags as you like, for example:<br>
-   <code>{<br>
-       "title":"MyPage",                                => The Name of your Webpage.<br>
-       "headerbgcolour":"white",                        => The Background-Colour of the header (could be any CSS-Colour)<br>
-       "headerimg":"assets/img/logo.png",               => Your logo.<br>
-       "headerbgimg":"assets/img/myheroimage.png",      => Your hero image.<br>
-       "initialpagetoparse":"assets/pages/index.page",  => The start page.<br>
-       "navigationfile":"assets/pages/navigation.page"  => The page used for the navigation.<br>
-   }</code>
+(see assets/json/conf.json)<br>
+<code>title</code> => The Name of your webpage.<br>
+<code>headerbgcolour</code> => The CSS-Colour value of the background of the header (does **NOT** work with slave-modern.css).<br>
+<code>headerimg</code> => Your logo.<br>
+<code>headerbgimg</code> => Your hero image.<br>
+<code>initialpagetoparse</code> => The welcome page displayed when first rendering Slave.<br>
+<code>navigationfile</code> => The *.page file used for the navigation.<br>
 4. Open index.html and choose a CSS-Stylesheet (slave.css, slave-standard.css or slave-modern.css), put it into the "link" tag in the head-section.
 5. Open .../assets/pages/index.page in your editor and edit it that it fits to your requirements.
 6. Open .../assets/pages/navigation.page and edit that it fits to your links. When linking to a slave-page,
