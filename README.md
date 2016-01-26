@@ -18,7 +18,7 @@ Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com
 Webfont "Roboto-Regular.ttf" and "RobotoCondensed-Regular.ttf" downloaded from google.com/fonts
 
 # System Requirements
-<span style="text-decoration:striketrough">To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave uses JS's XMLHttpRequest.</span><br>
+<span style="text-decoration:line-trough">To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave uses JS's XMLHttpRequest.</span><br>
 Since slave is fully written in JavaScript, the only thing you need is a browser.
 
 # Installation
@@ -48,7 +48,7 @@ with <code>openPage(**yourPageNameWithoutExtension**)</code>
 # FAQ
 Well, not frequently asked, but questions that can be asked<br>
 **Q:** Is there any Admin-UI?<br>
-**A:** <span style="text-decoration:strikethrough">There will be in near future.</span>
+**A:** <span style="text-decoration:line-through">There will be in near future.</span>
 A desktop app written in JavaScript and Electron is going to be available here on GitHub soon.<br><br>
 **Q:** Can I modify the source code?<br>
 **A:** Since this is released under GPL v3, yes, you can!<br><br>
