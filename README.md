@@ -1,5 +1,5 @@
 # Slave CMS
-A pseudo-CMS written in JavaScript, JSON, HTML5 and CSS3.
+A pseudo-CMS written in JavaScript, JSON, HTML5 and CSS3 which is rendered in the client's browser.
 
 # Background
 I've written this software, because I needed a fast CMS-like software for my website
@@ -9,16 +9,17 @@ and installing Plone or Drupal or something else was not suitable to me.
 There's one file in the main folder, called index.html. It links to four JavaScript files.
 The file "onload.js" gets the configuration file, a .json file, lets the "parser.json" parse
 the initial file set in the configuration onto the HTML-Element "body" and the navigation
-from "navigation.page" onto the Element "nav". Every klick on a link that should be parsed
-by slave should look like this: <code>< a href="#" onclick="openPage('PAGE')" >My super link</ a ></code>,
-which opens the page "PAGE.page" by opener.js. login.js is currently not in use.
+from "navigation.page" onto the Element "nav". Every link that should be parsed by slave
+should have an onclick-event which links to slave's javascript function "openPage(page)",
+where "page" should be replaced with the page's name without the *.page extension.
 
 # Credits
 Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com
 Webfont "Roboto-Regular.ttf" and "RobotoCondensed-Regular.ttf" downloaded from google.com/fonts
 
 # System Requirements
-To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave uses JS's XMLHttpRequest.
+<span style="text-decoration:striketrough">To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave uses JS's XMLHttpRequest.</span><br>
+Since slave is fully written in JavaScript, the only thing you need is a browser.
 
 # Installation
 1. Clone this repository into the folder you set in Apache's Configuration as the document root.
@@ -36,10 +37,19 @@ To run Slave, you need a working web server e.g. Apache HTTPD 2, because Slave u
 6. Open .../assets/pages/navigation.page and edit that it fits to your links. When linking to a slave-page,
 please remember that the a-elements have to look like <code>< a href="#" onclick="openPage('PAGE')" >My super link</ a ></code>!
 
+# Link creation
+**(1) Add an a-element to your index.page**<br>
+Open index.page from assets/pages/, add a simple a-element from html source.<br><br>
+**(2) Remove <code>href</code> attribute**<br>
+Use an onclick event instead: <code>onclick="openPage(href)"</code><br><br>
+**(3) Replace <code>openPage(href)</code>**<br>
+with <code>openPage(**yourPageNameWithoutExtension**)</code>
+
 # FAQ
-Well, not frequently asked, but questions that can be asked:<br>
+Well, not frequently asked, but questions that can be asked<br>
 **Q:** Is there any Admin-UI?<br>
-**A:** There will be in near future.<br><br>
+**A:** <span style="text-decoration:strikethrough">There will be in near future.</span>
+A desktop app written in JavaScript and Electron is going to be available here on GitHub soon.<br><br>
 **Q:** Can I modify the source code?<br>
 **A:** Since this is released under GPL v3, yes, you can!<br><br>
 **Q:** How do I make new styles?<br>
