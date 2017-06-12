@@ -2,7 +2,7 @@
 A pseudo-CMS written in JavaScript, JSON, HTML5 and CSS3 which is rendered in the client's browser.
 
 # Background
-I've written this software, because I needed a fast CMS-like software for my website
+I've written this software because I needed a fast CMS-like software for my website
 and installing Plone or Drupal or something else was not suitable to me.
 
 # How does it work?
@@ -14,7 +14,7 @@ should have an onclick-event which links to slave's javascript function "openPag
 where "page" should be replaced with the page's name without the *.page extension.
 
 # Credits
-Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com
+Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com<br>
 Webfont "Roboto-Regular.ttf" and "RobotoCondensed-Regular.ttf" downloaded from google.com/fonts
 
 # System Requirements
@@ -49,7 +49,8 @@ with <code>openPage(**yourPageNameWithoutExtension**)</code>
 Well, not frequently asked, but questions that can be asked<br>
 **Q:** Is there any Admin-UI?<br>
 **A:** ~~*There will be in near future.*~~
-**25th Jan 2016:** A desktop app written in JavaScript and Electron is going to be available here on GitHub soon.<br><br>
+~~**25th Jan 2016:** A desktop app written in JavaScript and Electron is going to be available here on GitHub soon.~~<br>
+**12th June 2017** Since I have other projects, which are not OpenSource, obviously, that currently need more attention, I'm not planning to do something in that direction in the near future, but you could write one yourself...<br><br>
 **Q:** Can I modify the source code?<br>
 **A:** Since this is released under GPL v3, yes, you can!<br><br>
 **Q:** How do I make new styles?<br>
