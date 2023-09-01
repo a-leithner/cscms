@@ -1,6 +1,9 @@
 # CS-CMS
 A pseudo-CMS written in JavaScript, JSON, HTML5 and CSS3 which is rendered in the client's browser (hence the name: client-side CMS).
 
+> [!WARNING]  
+> This is not to be used as an alternative to a full-fledged CMS and is, by no means, secure or production-ready!
+
 # Background
 I've written this software because I needed a fast CMS-like software for my website
 and installing Plone or Drupal or something else was not suitable to me.
@@ -14,8 +17,8 @@ should have an onclick-event which links to the CMS' javascript function "openPa
 where "page" should be replaced with the page's name without the *.page extension.
 
 # Credits
-Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com<br>
-Webfont "Roboto-Regular.ttf" and "RobotoCondensed-Regular.ttf" downloaded from google.com/fonts
+Webfont "BebasNeue.otf" was made by Dharma Type, downloaded form 1001fonts.com (Licensed under SIL Open Font License)<br>
+Webfont "Roboto-Regular.ttf" and "RobotoCondensed-Regular.ttf" downloaded from google.com/fonts (Licensed under Apache 2.0)
 
 # System Requirements
 Since this CMS is fully written in JavaScript, the only thing you need is a browser.
